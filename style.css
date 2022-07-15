@@ -1,0 +1,554 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 18px;
+}
+
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #588ec4;
+}
+
+
+body{
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.awal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+}
+
+.logo{
+    position: inherit;
+    font-size: 22px;
+    font-weight: 550;
+    left: 0;
+    margin-left: 35px;
+    color: aliceblue;
+    padding: 15px 5px 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+}
+
+span{
+    color: aqua;
+    padding-right: 15px;
+}
+
+
+.class1{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+.class1 li{
+  position: relative;  
+}
+
+.class1 a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    margin-right: 35px;
+    
+}
+
+.class1 a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background:whitesmoke;
+    left: 0;
+    width: 0;
+    bottom: -4px;
+    transition: ease .40s;
+
+}
+
+.class1 a:hover::after{
+    width: 80%;
+    margin-right: 35px;
+    background: aliceblue;
+}
+
+.welcome-section{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #3a3d40;
+}
+
+.forwelcome-section{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.forwelcome-section h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Gulzar', serif;
+}
+
+.forwelcome-section p{
+   font-size: 18px;
+   font-weight: 100;
+   padding: 10px 0 0 0; 
+}
+
+.forwelcome-section h5{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 35px;
+    /* margin-top: 550px; */
+}
+
+.forwelcome-section .fti{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #3a3d40;
+    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+}
+
+.about .kotakabout{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 480px;
+    width: 1200px;
+    background: #000;
+    box-shadow: 0 25px 30px rgba(0,0,0,.5);
+}
+
+.kotakabout .about-foto{
+    width: 30%;
+    height: 100%;
+    background: #3bd95d;
+    box-sizing: border-box;
+}
+
+.kotakabout .about-foto img{
+    width: 100%;
+    height: 100%;
+}
+
+.kotakabout .about-keterangan{
+    width: 70%;
+    height: 100%;
+    background: #333;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-keterangan .isiketerangan{
+    padding: 15px;
+}
+
+.about-keterangan .isiketerangan h1{
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-left: 10px;
+    color: #deb887;
+}
+
+.about-keterangan .isiketerangan p{
+    color: #ccc;
+    padding: 15px;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #3a3d40;
+    flex-wrap: wrap;
+    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+}
+
+
+.education .kotakpendidikan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    width: 100%;
+    margin-top: 75px;
+}
+
+.education .judulpendidikan{
+    height: 5px;
+    padding-top: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    color:beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.boxeducation{
+    width: 400px;
+    height: 470px;
+    display: flex;
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    background-color: #fff8dc;
+    margin: 150px 40px 100px;
+}
+.boxeducation .education1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.boxeducation .konteneducation{
+    padding: 25px;
+    color: #3a3d40;
+}
+
+
+
+.garis{
+    background: #000;
+}
+
+.boxeducation .sekolah{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.konteneducation p{
+    font-size: 15px;
+    padding-bottom: 35px;
+}
+
+.boxeducation img{
+    height: 100%;
+    width: 100%;
+    padding: 35px 8px 15px;
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3a3d40;
+
+}
+
+.kotak{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    padding-top: 25px;
+    margin: 50px 0 5px 0;
+}
+.kotak .kartu{
+    display: flex;
+    height: 250px;
+    margin: 30px 0;
+    width: 450px;
+    background: rgb(224, 221, 221);
+}
+
+.kotak .kartu .gambarkartu{
+    width: 450px;
+    height: 250px;
+    background: #333;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.kotak .kartu:hover .gambarkartu{
+    width: 0px;
+    height: 0px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.gambarkartu img{
+    width: 150px;
+    height: 150px;
+
+}
+
+.kotak .kartu:hover .gambarkartu img{
+    width: 0;
+    height: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+.kartu .komenkartu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.kartu .komenkartu h3{
+    font-size: 27px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: #deb887;
+}
+
+.kartu .komenkartu p{
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3a3d40;
+
+}
+
+.followme{
+    position: absolute;
+    /* left: 0; */
+    /* margin-right: 350px; */
+    /* margin-left: 350px; */
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    /* width: 600px; */
+}
+
+.followme h3{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #6c7278;
+}
+
+.contact ul{
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact ul li{
+    position: relative;
+    margin: 20px;
+}
+
+.contact ul li::before{
+    content: "";
+    margin-top: 100px;
+    left: 0;
+    bottom: 0;
+    top: 10px;
+    width: 115px;
+    height: 15px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0.8);
+}
+
+.contact ul li:hover::before{
+    opacity: .2;
+    transform: scale(1);
+    transition-delay: 0.2s;
+}
+
+
+.contact ul li a{
+    width: 100px;
+    height: 100px;
+    display: block;
+    transition: 0.5s;
+    background: #333;
+    align-items: center;
+}
+
+.contact ul li:hover a{
+    transform: translateY(-20px);
+}
+
+.contact ul li a span{
+    width: 100%;
+    height: 100%;
+}
+
+.contact ul li a span::before{
+    /* content: "A"; */
+    font-family: 'Finlandica', sans-serif;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background: #535455;
+    color: #262626;
+    transform-origin: top;
+    transition: transform 0.5s;
+
+}
+
+.contact ul li:hover a span::before{
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+
+.contact ul li a span::after{
+    /* content: "B"; */
+    font-family: 'Finlandica', sans-serif;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    color: #262626;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+.contact ul li:hover a span::after{
+    transform: rotateX(0deg) translateY(0);
+}
+
+.contact ul li:nth-child(1) a span::before,
+.contact ul li:nth-child(1) a span::after{
+    content: 'IG';
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding: 0 8px 0 8px;
+}
+
+.contact ul li:nth-child(2) a span::before,
+.contact ul li:nth-child(2) a span::after{
+    content: 'WA';
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding: 0 8px 0 8px;
+}
+
+.contact ul li:nth-child(3) a span::before,
+.contact ul li:nth-child(3) a span::after{
+    content: 'FB';
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding: 0 8px 0 8px;
+}
+
+.contact ul li:nth-child(1) a span::after{
+    content: "Instagram";
+    background: #e4405f;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 8px 0 8px;
+}
+
+.contact ul li:nth-child(2) a span::after{
+    content: "WhatsApp";
+    background: #3bd95d;
+    color: #000;    
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 8px 0 8px;
+}
+
+.contact ul li:nth-child(3) a span::after{
+    content: "FaceBook";
+    background: #3b5999;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 8px 0 8px;
+}
